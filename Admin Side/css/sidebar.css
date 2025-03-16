@@ -1,0 +1,65 @@
+/* Sidebar Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 250px;
+    background-color: #43547B;
+    padding: 2rem 1.5rem;
+    color: white;
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+.sidebar h2 {
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 2.5rem;
+    font-size: 1.8rem;
+    line-height: 1.3;
+    border-bottom: 2px solid #8da1cf;
+    padding-bottom: 1rem;
+}
+
+.sidebar a {
+    display: block;
+    color: #E1E7F5;
+    text-decoration: none;
+    padding: 0.8rem 1.2rem;
+    margin: 0.5rem 0;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-size: 0.95rem;
+}
+
+.sidebar a:hover {
+    background: #8da1cf;
+    color: white;
+}
+
+.sidebar a.active {
+    background: #E1E7F5;
+    color: #43547B;
+    font-weight: 500;
+}
+
+/* Main content area - Add this to your existing styles */
+.main-content {
+    margin-left: 250px; /* Match sidebar width */
+    padding: 20px;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+}
