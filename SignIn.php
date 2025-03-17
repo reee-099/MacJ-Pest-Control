@@ -1,7 +1,7 @@
 <?php
 session_start();
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $conn = new mysqli("localhost", "root", "", "MacJ_Pest_Control");
+    $conn = new mysqli("localhost", "root", "", "Macj_Pest_Control");
     
     $email = $_POST['email'];
     $password = $_POST['password'];
